@@ -30,8 +30,8 @@ public class Mail {
 		props.put("mail.debug", "true");
 		props.put("mail.store.protocol", "pop3");
 		props.put("mail.transport.protocol", "smtp");
-		final String username = "testtest101testtest@gmail.com";//
-		final String password = "Qwerty@345";
+		final String username = "InsertEmaiId";//
+		final String password = "InsertPassword";
 		
 		
 		// creating session object to get properties
@@ -48,8 +48,8 @@ public class Mail {
 			Message message = new MimeMessage(session);
 
 // -- Set the FROM and TO fields --
-			message.setFrom(new InternetAddress("testtest101testtest@gmail.com"));
-			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("HomeSupplyTracker@protonmail.com", false));
+			message.setFrom(new InternetAddress("send from EmailId"));
+			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("send to emailId", false));
 			message.setSubject("Order Details");
 			// set body of the email.
 			String html = "\"<h1>This The Order in table format</h1>\"<br/>" + "<table align=\"centre\" border=border>"
