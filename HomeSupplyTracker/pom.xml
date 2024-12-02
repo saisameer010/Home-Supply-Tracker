@@ -52,7 +52,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>5.2.7.RELEASE</version>
+			<version>6.1.14</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
